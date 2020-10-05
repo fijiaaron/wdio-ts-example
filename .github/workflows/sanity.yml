@@ -1,0 +1,17 @@
+name: sanity-check
+
+on:
+    [workflow_dispatch]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        
+    steps:
+        run: adduser --disabled-password --gecos "" tester
+        run: sudo su - tester
+        run: whoami
+        run: id
+        run: google-chrome --version
+        run: chromedriver --version 
+        
