@@ -6,10 +6,9 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-        
-    steps:
-        run: whoami
-        run: id
-        run: google-chrome --version
-        run: chromedriver --version 
-        
+        steps:
+            run: whoami
+            run: id
+            run: google-chrome --version
+            run: chromedriver --version 
+            
