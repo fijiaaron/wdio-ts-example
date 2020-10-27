@@ -20,10 +20,11 @@ describe('Google test', () => {
 
     it('should search google using page objects', () => {
         GoogleSearchPage.open();
-        GoogleSearchPage.searchFor("test wizardry");
+        GoogleSearchPage.searchFor("testwizardry");
         GoogleResultsPage.chooseFirstResult();
 
         console.log(browser.getTitle());
+        browser.pause(1000);
     });
 });
 
