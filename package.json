@@ -4,8 +4,10 @@
   "description": "Example using webdriver.io with typescript",
   "main": "index.js",
   "scripts": {
-    "test": "wdio",
-    "spec": "wdio run wdio.conf.js --spec "
+    "test": "wdio run wdio.conf.js",
+    "spec": "wdio run wdio.conf.js --spec ",
+    "test:headless": "wdio run wdio.headless.conf.js",
+    "spec:headless": "wdio run wdio.headless.conf.js --spec "
   },
   "author": "Aaron Evans <aarone@one-shore.com>",
   "license": "UNLICENSED",
