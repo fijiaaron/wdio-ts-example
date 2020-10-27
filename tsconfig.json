@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ES2015",
+        "target": "ES2019",
         "module": "commonjs",
         "lib": ["es2019", "dom"],
         "esModuleInterop": true,
@@ -9,7 +9,8 @@
         "baseUrl": ".",
         "paths": {
             "*": [ "./*" ],
-            "src/*": ["./src/*"]
+            "src/*": ["./src/*"],
+            "test/*": ["./test/*"]
         },
         "types": [
             "node", 
@@ -23,9 +24,10 @@
         ]
     },
     "include": [
+        "./src/**/*.ts",
         "./test/**/*.ts"
     ],
     "exclude": [
-        
+        "./node_modules"
     ]
 }
